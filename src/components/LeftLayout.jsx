@@ -8,15 +8,15 @@ function LeftLayout() {
   return (
     <div className="container pl-9 pr-5 pt-16">
       <div className="flex gap-5 items-start pb-5">
-        <div className="text-4xl text-white flex  flex-col gap-3">
+        <div className="text-3xl text-white flex  flex-col gap-3">
           <MdHomeFilled />
           <IoSearch />
           <VscLibrary />
         </div>
         <div className="text-white flex  flex-col gap-5">
-          <p className="text-xl font-semibold">Search</p>
-          <p className="text-xl font-semibold">Home</p>
-          <p className="text-xl font-semibold">Your Library</p>
+          <p className="text-lg font-semibold">Home</p>
+          <p className="text-lg font-semibold">Search</p>
+          <p className="text-lg font-semibold">Your Library</p>
         </div>
       </div>
       <div className="flex text-xl gap-5 items-center ">

@@ -9,7 +9,7 @@ import MainLayouts from "./layouts/MainLayouts";
 function App() {
   useEffect(() => {
     http
-      .get("featured-playlists")
+      .get("/browse/featured-playlists")
       .then((respons) => {
       })
       .catch((error) => {
@@ -44,7 +44,7 @@ function App() {
         }
       ></Route>
       <Route
-        path="/detailes/:id"
+        path="/playlist/:id"
         element={
           <MainLayouts>
             <Detailes />

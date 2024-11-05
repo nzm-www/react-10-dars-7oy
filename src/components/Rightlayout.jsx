@@ -21,44 +21,44 @@ function Rightlayout() {
           to.
         </h2>
         <div>
-          <div className="text-6xl pt-4  flex items-center gap-4 text-stone-600">
+          <div className="text-5xl pt-4  flex items-center gap-4 text-stone-600">
             <PiUserCircleDuotone />
             <div className="flex flex-col gap-2">
-              <b className="w-[100px] rounded-md justify-center text-[8px] flex bg-stone-600 text-stone-600">
+              <b className="w-[90px] rounded-md justify-center text-[6px] flex bg-stone-600 text-stone-600">
                 sd
               </b>
-              <b className="w-[80px] justify-center rounded-md text-[8px] flex bg-stone-600 text-stone-600">
+              <b className="w-[70px] justify-center rounded-md text-[6px] flex bg-stone-600 text-stone-600">
                 sd
               </b>
-              <b className="w-[80px] justify-center rounded-md text-[8px] flex bg-stone-600 text-stone-600">
+              <b className="w-[70px] justify-center rounded-md text-[6px] flex bg-stone-600 text-stone-600">
                 sd
               </b>
             </div>
           </div>
-          <div className="text-6xl pt-4  flex items-center gap-4 text-stone-600">
+          <div className="text-5xl pt-4  flex items-center gap-4 text-stone-600">
             <PiUserCircleDuotone />
             <div className="flex flex-col gap-2">
-              <b className="w-[100px] rounded-md justify-center text-[8px] flex bg-stone-600 text-stone-600">
+              <b className="w-[90px] rounded-md justify-center text-[6px] flex bg-stone-600 text-stone-600">
                 sd
               </b>
-              <b className="w-[80px] justify-center rounded-md text-[8px] flex bg-stone-600 text-stone-600">
+              <b className="w-[70px] justify-center rounded-md text-[6px] flex bg-stone-600 text-stone-600">
                 sd
               </b>
-              <b className="w-[80px] justify-center rounded-md text-[8px] flex bg-stone-600 text-stone-600">
+              <b className="w-[70px] justify-center rounded-md text-[6px] flex bg-stone-600 text-stone-600">
                 sd
               </b>
             </div>
           </div>
-          <div className="text-6xl pt-4  flex items-center gap-4 text-stone-600">
+          <div className="text-5xl pt-4  flex items-center gap-4 text-stone-600">
             <PiUserCircleDuotone />
             <div className="flex flex-col gap-2">
-              <b className="w-[100px] rounded-md justify-center text-[8px] flex bg-stone-600 text-stone-600">
+              <b className="w-[90px] rounded-md justify-center text-[6px] flex bg-stone-600 text-stone-600">
                 sd
               </b>
-              <b className="w-[80px] justify-center rounded-md text-[8px] flex bg-stone-600 text-stone-600">
+              <b className="w-[70px] justify-center rounded-md text-[6px] flex bg-stone-600 text-stone-600">
                 sd
               </b>
-              <b className="w-[80px] justify-center rounded-md text-[8px] flex bg-stone-600 text-stone-600">
+              <b className="w-[70px] justify-center rounded-md text-[6px] flex bg-stone-600 text-stone-600">
                 sd
               </b>
             </div>
