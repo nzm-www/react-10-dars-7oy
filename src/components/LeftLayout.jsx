@@ -3,6 +3,7 @@ import { MdHomeFilled } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { VscLibrary } from "react-icons/vsc";
 import { FaSquarePlus } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function LeftLayout() {
   return (
@@ -14,7 +15,10 @@ function LeftLayout() {
           <VscLibrary />
         </div>
         <div className="text-white flex  flex-col gap-5">
+        <Link to='/'>
+
           <p className="text-lg font-semibold">Home</p>
+        </Link>
           <p className="text-lg font-semibold">Search</p>
           <p className="text-lg font-semibold">Your Library</p>
         </div>

@@ -113,13 +113,13 @@ function Home() {
           <h2 className="text-4xl pb-7 font-bold text-white pt-12">
             Good afternoon
           </h2>
-          <div className="flex flex-wrap gap-7">
+          <div className="flex  flex-wrap  gap-4">
             {songs.length > 0 &&
               songs.map((value) => (
                 <div
                   key={value.id}
                   onClick={() => handleDetels(value.id)}
-                  className="rounded-md items-center gap-5 flex w-[400px] bg-[#3d3d7f] cursor-pointer"
+                  className="rounded-md items-center gap-5 flex w-[360px] bg-[#3d3d7f] cursor-pointer"
                 >
                   {value.images && value.images[0] && (
                     <img
@@ -184,7 +184,7 @@ function Home() {
                 <div
                   key={index}
                   onClick={() => handleDetels(item.id)}
-                  className="cursor-pointer wrapper p-4 rounded-md bg-[#121212] w-[200px] text-white"
+                  className="cursor-pointer wrapper p-4 rounded-md bg-[#121212] w-[175px] text-white"
                 >
                   {item.images && item.images[0] && (
                     <img

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useRef } from "react";
 import { useParams } from "react-router-dom";
 import http from "../axios";
 import { FaRegClock } from "react-icons/fa";
@@ -13,9 +14,13 @@ import { Link } from "react-router-dom";
 import { AiOutlineLike } from "react-icons/ai";
 
 function Detailes() {
+  const audioRef = useRef(null);
   const { id } = useParams();
+  const [currentTrack, setCurrentTrack] = useState(null);
   const [playlist, setPlaylist] = useState(null);
   const [tracks, setTracks] = useState([]);
+  const [playing, setPlaying] = useState(false);
+
 
   useEffect(() => {
     http
@@ -23,9 +28,25 @@ function Detailes() {
       .then((response) => {
         setPlaylist(response.data);
         setTracks(response.data.tracks.items);
+        console.log(response.data);
       })
       .catch((error) => console.error(error));
   }, [id]);
+
+  const togglePlayPause = (trackUrl, track) => {
+    if (audioRef.current.src === trackUrl && !audioRef.current.paused) {
+      audioRef.current.pause();
+      setPlaying(false);
+    } else {
+      if (audioRef.current.src !== trackUrl) {
+        audioRef.current.src = trackUrl;
+        setCurrentTrack(track);
+      }
+      audioRef.current.play();
+      setPlaying(true);
+    }
+  };
+
   // loder uchun uzim comment yozib ketyabman GPT yozgani yoq
   if (!playlist) {
     return (
@@ -130,6 +151,22 @@ function Detailes() {
                     {song.track.name}
                   </h3>
                 </div>
+                <div className="absolute pl-4 		text-3xl">
+                  <button
+                    onClick={() =>
+                      togglePlayPause(song.track.preview_url, song.track)
+                    }
+                    className={`${
+                      currentTrack?.id === song.track.id && playing
+                        ? " text-[#00000000]	"
+                        : " text-[#00000000]	"
+                    }  text-[#00000000]	`}
+                  >
+                    {currentTrack?.id === song.track.id && playing
+                      ? "Pau"
+                      : "Pla"}
+                  </button>
+                </div>
 
                 <div className=" flex items-center gap-[220px]">
                   <p className="text-xs  text-stone-400 w-40 ">
@@ -154,6 +191,7 @@ function Detailes() {
           </div>
         </div>
       </div>
+      <audio ref={audioRef} />
     </div>
   );
 }
